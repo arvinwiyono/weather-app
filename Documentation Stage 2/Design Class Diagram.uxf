@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>6</zoom_level>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>828</x>
+      <y>432</y>
+      <w>192</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>/Monitor/
+--
+#weatherLocation: MelbourneWeatherLocation
+#infoType: InfoType
+#location: String
+-newData: Boolean
+--
++GetInfo(): void
++FeedData(): String [ ]
++GetLocation(): String
++GetMonitorType(): String
++UpdateStatus(): void
++HasNewData(): Boolean
+#DoneFeedData(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>300</x>
+      <y>444</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>/WeatherAdapter/
+--
+-updateInterval: Integer
+--
++GetLocations(): String [ ]
++GetWeather(String): String [ ]
++GetUpdateInterval(): Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>582</x>
+      <y>444</y>
+      <w>138</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>/WeatherLocation/
+--
+#server: WeatherAdapter
+#monitorList: Monitor[ ]
+#location: String
+--
++GetLocation(): String
++AttachMonitor(Monitor): void
++DetachMonitor(Monitor): void
++UpdateDataAndMonitor(): void
++CheckData(): Boolean
++GetData(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>408</x>
+      <y>450</y>
+      <w>186</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>gets data from
+lt=&lt;
+m1= 1
+m2= 0 .. *</panel_attributes>
+    <additional_attributes>18;30;174;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>702</x>
+      <y>450</y>
+      <w>138</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>displayed by
+lt=&gt;
+m1= 1
+m2= 1..*</panel_attributes>
+    <additional_attributes>18;30;126;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>390</x>
+      <y>546</y>
+      <w>126</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>LiveAdapter
+--
+-server: MelbourneWeather2
+--
++GetLocations(): String [ ]
++GetWeather(String): String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>342</x>
+      <y>486</y>
+      <w>120</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;36;108;36;108;60</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>582</x>
+      <y>618</y>
+      <w>138</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>MelbourneWeatherLocation
+--
+-temperature: String
+-rainfall: String
+-lastUpdate: String
+--
++GetTemperature: String
++GetRainfall(): String
++GetLastUpdate(): String
++CheckData(): Boolean
++GetData(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>630</x>
+      <y>546</y>
+      <w>30</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;72</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>888</x>
+      <y>546</y>
+      <w>30</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;18;60</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>828</x>
+      <y>606</y>
+      <w>156</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>/LiveMonitor/
+--
+#temperature: String
+#rainfall: String
+#lastUpdate: String
+--
++GetInfo(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1032</x>
+      <y>618</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>LiveTemperatureMonitor
+--
+--
++FeedData(): String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1032</x>
+      <y>672</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>LiveRainfallMonitor
+--
+--
++FeedData():String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>558</x>
+      <y>204</y>
+      <w>180</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;controller&gt;&gt;
+/WeatherController/
+--
+#server: WeatherAdapter
+#selectedLocations: WeatherLocation[ ] 
+--
++GetUpdateInterval(): Integer
++GetAvailableLocations(): String[ ]
++LocationExists(String): Integer
++GetNumberOfLocations(): Integer
++GetAllSelectedLocations(): String[ ]
++UpdateLocation(Integer): void
++GetAllMonitorsInfo(): String[ ]
++RemoveLocation(String): void
++CreateMonitor(String): Monitor
++CreateTemperatureMonitor(String): Monitor
++CreateRainfallMonitor(String): Monitor
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>702</x>
+      <y>606</y>
+      <w>138</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>pulls data from
+lt=&lt;
+m1=1
+m2=1 .. *</panel_attributes>
+    <additional_attributes>18;30;126;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>384</x>
+      <y>672</y>
+      <w>162</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>MelbourneWeather2
+--
+--
++getLocations(): String [ ]
++getTemperature(String): String [ ]
++getRainfall(String): String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>318</x>
+      <y>546</y>
+      <w>94</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>uses services of
+lt=&lt;
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>66;150;48;150;48;18;72;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>156</x>
+      <y>546</y>
+      <w>156</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>TimeLapseAdapter
+--
+-server: MelbourneWeatherTimeLapse
+--
++GetLocations(): String [ ]
++GetWeather(String): String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>216</x>
+      <y>504</y>
+      <w>174</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>162;18;162;18;18;18;18;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>84</x>
+      <y>546</y>
+      <w>94</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>uses services of
+lt=&lt;
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>66;150;48;150;48;18;72;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>150</x>
+      <y>672</y>
+      <w>162</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>MelbourneWeatherTimeLapse
+--
+--
++getLocations(): String [ ]
++getWeather(String): String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>828</x>
+      <y>750</y>
+      <w>156</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>/TimeLapseMonitor/
+--
+#temperatureList: Double [ ]
+#rainfallList: Double [ ]
+#validTemperature: Double [ ]
+#validRainfall: Double [ ]
+#lastUpdate: String [ ]
+--
++GetInfo(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1032</x>
+      <y>780</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>TimeLapseTemperatureMonitor
+--
+--
++FeedData(): String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1032</x>
+      <y>834</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>TimeLapseRainfallMonitor
+--
+--
++FeedData(): String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>762</x>
+      <y>510</y>
+      <w>78</w>
+      <h>258</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>66;18;18;18;18;246;66;246</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>606</x>
+      <y>708</y>
+      <w>234</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>pulls data from
+lt=&lt;
+m1=1
+m2=1 .. *</panel_attributes>
+    <additional_attributes>48;18;48;72;222;72</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>270</y>
+      <w>240</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>380.0;10.0;10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>270</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>324</x>
+      <y>306</y>
+      <w>198</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>LiveWeatherController
+--
+--
++CreateMonitor(String): Monitor
++CreateTemperatureMonitor(String): Monitor
++CreateRainfallMonitor(String): Monitor
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>108</x>
+      <y>306</y>
+      <w>198</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>TimeLapseWeatherController
+--
+--
++CreateMonitor(String): Monitor
++CreateTemperatureMonitor(String): Monitor
++CreateRainfallMonitor(String): Monitor
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>354</y>
+      <w>18</w>
+      <h>204</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>474</x>
+      <y>354</y>
+      <w>18</w>
+      <h>204</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>642</x>
+      <y>366</y>
+      <w>48</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>controls
+lt=&lt;-
+m1=0..*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1002</x>
+      <y>426</y>
+      <w>120</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>displays info type
+lt=&gt;
+m1= 1
+m2= 1</panel_attributes>
+    <additional_attributes>18;30;108;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1110</x>
+      <y>420</y>
+      <w>108</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+InfoType
+--
+Both
+Temperature
+Rainfall</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>894</x>
+      <y>96</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;view&gt;&gt;
+LoadingPage
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>828</x>
+      <y>210</y>
+      <w>168</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;view&gt;&gt;
+MainPage
+--
++labelList: Label [ ]
++chartList: Chart [ ]
++liveController: WeatherController
++timeLapseController:WeatherController
++LiveTimer: Timer
++TimeLapseTimer: Timer
+--
++PrepareAvailableLocations(): void
+-AddLocation(WeatherController): void
+-DrawChart(Monitor): void
+-DrawLabel(Monitor): void
+-UpdateLocations(WeatherController): void
+-UpdateControls(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1098</x>
+      <y>198</y>
+      <w>132</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;view&gt;&gt;
+RemovePage
+--
+-LController: WeatherController
+-TLController: WeatherController
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>732</x>
+      <y>228</y>
+      <w>108</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+sends request to
+m1=1..*
+m2=1</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>462</x>
+      <y>168</y>
+      <w>462</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0;750.0;10.0;750.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>168</y>
+      <w>252</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;230.0;10.0;10.0;400.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>990</x>
+      <y>246</y>
+      <w>120</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>942</x>
+      <y>138</y>
+      <w>18</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>648</x>
+      <y>174</y>
+      <w>522</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+sends request to</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;20.0;850.0;20.0;850.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1032</x>
+      <y>564</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>LiveBothMonitor
+--
+--
++FeedData(): String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Class</type>
+    <coordinates>
+      <x>1032</x>
+      <y>726</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>TimeLapseBothMonitor
+--
+--
++FeedData(): String [ ]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>966</x>
+      <y>618</y>
+      <w>78</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;66;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>966</x>
+      <y>780</y>
+      <w>78</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>18;18;66;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>990</x>
+      <y>732</y>
+      <w>54</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>42;120;18;120;18;18;42;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>990</x>
+      <y>570</y>
+      <w>54</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>42;120;18;120;18;18;42;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>402</x>
+      <y>342</y>
+      <w>852</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>756;348;840;348;840;66;18;66;18;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1140</x>
+      <y>618</y>
+      <w>114</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>18;18;102;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1140</x>
+      <y>564</y>
+      <w>114</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>18;18;102;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>342</x>
+      <y>354</y>
+      <w>276</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+uses services provided by
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>18;90;18;72;264;72;264;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>216</x>
+      <y>342</y>
+      <w>1062</w>
+      <h>522</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>942;510;1050;510;1050;42;18;42;18;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1140</x>
+      <y>726</y>
+      <w>138</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>18;18;126;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>1140</x>
+      <y>780</y>
+      <w>138</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>18;18;126;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>486</x>
+      <y>342</y>
+      <w>402</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+creates</panel_attributes>
+    <additional_attributes>390;90;390;54;18;54;18;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>234</x>
+      <y>342</y>
+      <w>288</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>lt=.
+creates</panel_attributes>
+    <additional_attributes>276;54;36;54;36;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>870</x>
+      <y>354</y>
+      <w>114</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0 .. *
+m2=1
+displays as text/graph</panel_attributes>
+    <additional_attributes>60;78;60;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>978</x>
+      <y>204</y>
+      <w>198</w>
+      <h>228</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+compares 
+monitor infoType</panel_attributes>
+    <additional_attributes>186;216;186;156;54;156;54;18;18;18</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>294</x>
+      <y>198</y>
+      <w>276</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>264;18;18;18;18;78</additional_attributes>
+  </element>
+</diagram>

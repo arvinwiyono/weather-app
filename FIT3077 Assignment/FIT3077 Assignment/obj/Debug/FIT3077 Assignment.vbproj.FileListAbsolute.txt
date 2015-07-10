@@ -1,0 +1,57 @@
+C:\Users\Arvin\Desktop\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe.config
+C:\Users\Arvin\Desktop\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe
+C:\Users\Arvin\Desktop\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.pdb
+C:\Users\Arvin\Desktop\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.xml
+C:\Users\Arvin\Desktop\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.Resources.resources
+C:\Users\Arvin\Desktop\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.vbproj.GenerateResource.Cache
+C:\Users\Arvin\Desktop\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.exe
+C:\Users\Arvin\Desktop\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.xml
+C:\Users\Arvin\Desktop\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.pdb
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe.config
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.exe
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.xml
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.pdb
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.pdb
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.xml
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.Resources.resources
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.vbproj.GenerateResource.Cache
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.MainPage.resources
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.LoadingPage.resources
+C:\Users\Arvin\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.RemovePage.resources
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe.config
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.exe
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.xml
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.pdb
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.pdb
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.xml
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.RemovePage.resources
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.LoadingPage.resources
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.MainPage.resources
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.Resources.resources
+C:\Users\Administrator\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.vbproj.GenerateResource.Cache
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe.config
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.exe
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.xml
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.pdb
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.RemovePage.resources
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.LoadingPage.resources
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.MainPage.resources
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.Resources.resources
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.vbproj.GenerateResource.Cache
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.pdb
+\\ad.monash.edu\home\User050\awiy1\Desktop\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.xml
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe.config
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.exe
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.xml
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.pdb
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.exe
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.pdb
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\bin\Debug\FIT3077 Assignment.xml
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.RemovePage.resources
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.LoadingPage.resources
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.MainPage.resources
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077_Assignment.Resources.resources
+\\ad.monash.edu\home\User050\awiy1\Documents\Software Engineering\FIT3077-2015-S1-CodeIneNoobs\FIT3077 Assignment\FIT3077 Assignment\obj\Debug\FIT3077 Assignment.vbproj.GenerateResource.Cache

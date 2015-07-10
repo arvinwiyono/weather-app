@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>470</x>
+      <y>410</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>420</y>
+      <w>120</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Create Monitor</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>420</x>
+      <y>520</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Initialized</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>520</y>
+      <w>220</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+UpdateStatus()</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>720</x>
+      <y>520</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Updated</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>990</x>
+      <y>520</y>
+      <w>110</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Not Updated</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>460</y>
+      <w>300</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+UpdateStatus()</panel_attributes>
+    <additional_attributes>280.0;60.0;280.0;20.0;10.0;20.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>820</x>
+      <y>530</y>
+      <w>190</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+[hasNewData = true]/
+feedData()</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1030</x>
+      <y>560</y>
+      <w>200</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+Observed WeatherLocation
+removed</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>1030</x>
+      <y>670</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=final</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>320</y>
+      <w>220</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>State Diagram
+Monitor Object
+valign=center
+fontsize=20
+lw=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

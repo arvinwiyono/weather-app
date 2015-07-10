@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>980</x>
+      <y>462</y>
+      <w>126</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Monitor
+--
+--
++FeedData(): String
++GetLocation(): String
++GetInfo()
++UpdateStatus()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>427</x>
+      <y>462</y>
+      <w>126</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>/WeatherAdapter/
+--
+--
++GetLocations(): String
++GetTemperature(): String
++GetRainfall(): String
++GetLastUpdate(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>686</x>
+      <y>462</y>
+      <w>161</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>/WeatherLocation/
+--
+#server: WeatherAdapter
+#monitorList: Monitor[ ]
+#location: String
+--
++GetLocation(): String
++AttachMonitor(): void
++DetachMonitor(): void
++UpdateDataAndMonitor(): void
++GetData(): void
++CheckData(): Boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>532</x>
+      <y>469</y>
+      <w>167</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>gets data from
+lt=&lt;
+m1= 1
+m2= 0 .. *</panel_attributes>
+    <additional_attributes>21;35;154;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>826</x>
+      <y>469</y>
+      <w>167</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>displayed by
+lt=&gt;
+m1= 1
+m2= 1..*</panel_attributes>
+    <additional_attributes>21;35;154;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>420</x>
+      <y>588</y>
+      <w>140</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>MelbourneWeatherAdapter
+--
+-server: MelbourneWeather
+--
++GetLocations(): String
++GetTemperature(): String
++GetRainfall(): String
++GetLastUpdate(): String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>462</x>
+      <y>525</y>
+      <w>34</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>693</x>
+      <y>644</y>
+      <w>147</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>MelbourneWeatherLocation
+--
+-temperature: String
+-rainfall: String
+-lastUpdate: String
+--
++GetTemperature: String
++GetRainfall(): String
++GetLastUpdate(): String
++GetData(): void
++CheckData(): Boolean
++UpdateDataMonitor(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>742</x>
+      <y>567</y>
+      <w>34</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;77</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1022</x>
+      <y>525</y>
+      <w>34</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>21;21;21;119</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>980</x>
+      <y>644</y>
+      <w>126</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>MelbourneMonitor
+--
+#location: String
+#temperature: String
+#rainfall: String
+#lastUpdate: String
+--
++FeedData(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1022</x>
+      <y>721</y>
+      <w>34</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>917</x>
+      <y>756</y>
+      <w>244</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;231;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>868</x>
+      <y>798</y>
+      <w>147</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>MelbourneRainfallMonitor
+--
+--
++FeedData(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1071</x>
+      <y>798</y>
+      <w>147</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>MelbourneTemperatureMonitor
+--
+--
++FeedData():String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1127</x>
+      <y>756</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>917</x>
+      <y>756</y>
+      <w>34</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;21;42</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>665</x>
+      <y>238</y>
+      <w>196</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Controller
+--
+#server: WeatherAdapter
+#monitors: Monitor[ ]
+#selectedLocations: WeatherLocation[ ] 
+--
++GetAvailableLocations(): String[ ]
++LocationExists(l: String): Integer
++GetNumberOfLocations(): Integer
++GetAllSelectedLocations(): String[ ]
++UpdateMonitorOfLocation(): void
++GetAllMonitorsInfo(): String[ ]
++RemoveLocation(l: String): void
++CreateMonitor(location: String): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>350</x>
+      <y>273</y>
+      <w>238</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>MelbourneWeatherController
+--
+--
++CreateTemperatureMonitor(location: String): String
++CreateRainfallMonitor(location: String): String
++CreateMonitor(location: String): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>567</x>
+      <y>280</y>
+      <w>111</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>98;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>819</x>
+      <y>651</y>
+      <w>174</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>pulls data from
+lt=&lt;
+m1=1
+m2=1 .. *</panel_attributes>
+    <additional_attributes>21;35;161;35</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>392</x>
+      <y>756</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>MelbourneWeather2
+--
+--
++getLocations(): String[ ]
++getTemperature(location: String): String
++getRainfall(location: String): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>434</x>
+      <y>651</y>
+      <w>96</w>
+      <h>118</h>
+    </coordinates>
+    <panel_attributes>use service of
+lt=&lt;
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>49;105;49;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>469</x>
+      <y>399</y>
+      <w>300</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>21;63;21;21;287;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>735</x>
+      <y>371</y>
+      <w>34</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>21;91;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>735</x>
+      <y>399</y>
+      <w>328</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>315;63;315;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>343</x>
+      <y>315</y>
+      <w>90</w>
+      <h>321</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>77;308;21;308;21;63;21;21</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>917</x>
+      <y>287</y>
+      <w>252</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>FIT3077 Assignment
+Weather Monitor
+Stage 1
+valign=center
+halign=center
+fontsize=20
+lth=2.5
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

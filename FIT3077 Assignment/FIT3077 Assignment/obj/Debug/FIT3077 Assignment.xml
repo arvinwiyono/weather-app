@@ -1,0 +1,796 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FIT3077Assignment
+</name>
+</assembly>
+<members>
+<member name="M:FIT3077_Assignment.RemovePage.RemovePage_Load(System.Object,System.EventArgs)">
+ 
+ Description : Procedure which is executed when RemovePage is loaded
+ Return      : None
+ Post        : Active WeatherLocations' location names are listed in the RemoveLocationList
+
+
+</member><member name="M:FIT3077_Assignment.RemovePage.RemoveLbl_Click(System.Object,System.EventArgs)">
+ 
+ Description : Procedure which is executed when RemoveLbl is clicked. This sends request to both controllers to remove WeatherLocations with the specified location from the selectedLocations list
+ Return      : None
+ Post        : All controls which display the removed locations are removed from the main page flow layout panel
+
+
+</member><member name="T:FIT3077_Assignment.RemovePage">
+
+ Project     : FIT3077 Assignment
+ Class       : LoadingPage
+ Author      : Arvin Wiyono (awiy1) and Darren Wong (dwwon6)
+ Modified    : 18 May 2015
+ Description : The remove page of the weather monitor application
+ Precondition: MainPage and WeatherController classes exists
+ 
+
+</member><member name="T:FIT3077_Assignment.LoadingPage">
+
+ Project     : FIT3077 Assignment
+ Class       : LoadingPage
+ Author      : Arvin Wiyono (awiy1) and Darren Wong (dwwon6)
+ Modified    : 10 May 2015
+ Description : The loading page of the weather monitor application
+ Precondition: MainPage exists
+ 
+
+</member><member name="M:FIT3077_Assignment.TimeLapseBothMonitor.#ctor(FIT3077_Assignment.WeatherLocation)">
+ 
+ Class constructor
+ Return      : TimeLapseBothMonitor object
+ Param       : wl As WeatherLocation
+
+
+</member><member name="M:FIT3077_Assignment.TimeLapseBothMonitor.FeedData">
+ 
+ Description : Giving data to the requestor
+ Return      : Array of String = (temperature, rainfall, date/time)
+ Param       : None
+ 
+
+</member><member name="T:FIT3077_Assignment.TimeLapseBothMonitor">
+
+ Project     : FIT3077 Assignment
+ Class       : TimeLapseBothMonitor
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 21 May 2015
+ Description : Subclass of TimeLapseMonitor superclass, which feeds both latest temperature and rainfall data, and date/time
+ Precondition: WeatherLocation class and Info enumeration are required - Superclass TimeLapseMonitor exists 
+ 
+
+</member><member name="M:FIT3077_Assignment.TimeLapseMonitor.#ctor(FIT3077_Assignment.WeatherLocation)">
+ 
+ Class constructor
+ Param       : wl As WeatherLocation
+ Remark      : This will initialize all list attributes and get the frist data from the server
+
+
+</member><member name="M:FIT3077_Assignment.TimeLapseMonitor.GetInfo">
+ 
+ Description : Read data from the observed WeatherLocation and store them in the appropriate list
+ Return      : None
+ Param       : None
+ 
+
+</member><member name="T:FIT3077_Assignment.TimeLapseMonitor">
+
+ Project     : FIT3077 Assignment
+ Class       : TimeLapseMonitor
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 21 May 2015
+ Description : An abstract class deriving from Monitor superclass, which observes a WeatherLocation in a 'Time Lapse' manner by 
+               keeping history of datum in separate lists
+ Precondition: Monitor superclass and WeatherLocation class are required
+ 
+
+</member><member name="M:FIT3077_Assignment.TimeLapseTemperatureMonitor.#ctor(FIT3077_Assignment.WeatherLocation)">
+ 
+ Class constructor
+ Return      : TimeLapseTemperatureMonitor object
+ Param       : wl As WeatherLocation
+
+
+</member><member name="M:FIT3077_Assignment.TimeLapseTemperatureMonitor.FeedData">
+ 
+ Description : Giving data to the requestor
+ Return      : Array of String = (temperature, date/time)
+ Param       : None
+ 
+
+</member><member name="T:FIT3077_Assignment.TimeLapseTemperatureMonitor">
+
+ Project     : FIT3077 Assignment
+ Class       : TimeLapseTemperatureMonitor
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 20 May 2015
+ Description : Subclass of TimeLapseMonitor superclass, which feeds only the latest temperature data and date/time
+ Precondition: WeatherLocation class and Info enumeration are required - Superclass TimeLapseMonitor exists 
+ 
+
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.#ctor">
+	<remarks/>
+</member><member name="E:FIT3077_Assignment.MonashLive.MelbourneWeather2.getRainfallCompleted">
+	<remarks/>
+</member><member name="E:FIT3077_Assignment.MonashLive.MelbourneWeather2.getTemperatureCompleted">
+	<remarks/>
+</member><member name="E:FIT3077_Assignment.MonashLive.MelbourneWeather2.getLocationsCompleted">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.getRainfall(System.String)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.getRainfallAsync(System.String)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.getRainfallAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.getTemperature(System.String)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.getTemperatureAsync(System.String)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.getTemperatureAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.getLocations">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.getLocationsAsync">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.getLocationsAsync(System.Object)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashLive.MelbourneWeather2.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashLive.MelbourneWeather2">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashLive.getRainfallCompletedEventHandler">
+	<remarks/>
+</member><member name="P:FIT3077_Assignment.MonashLive.getRainfallCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashLive.getRainfallCompletedEventArgs">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashLive.getTemperatureCompletedEventHandler">
+	<remarks/>
+</member><member name="P:FIT3077_Assignment.MonashLive.getTemperatureCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashLive.getTemperatureCompletedEventArgs">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashLive.getLocationsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:FIT3077_Assignment.MonashLive.getLocationsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashLive.getLocationsCompletedEventArgs">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.LiveMonitor.#ctor(FIT3077_Assignment.WeatherLocation)">
+ 
+ Class constructor
+ Param       : wl As WeatherLocation
+
+
+</member><member name="M:FIT3077_Assignment.LiveMonitor.GetInfo">
+ 
+ Description : Get data from the observed WeatherLocation
+ Return      : None
+ Param       : None
+
+
+</member><member name="T:FIT3077_Assignment.LiveMonitor">
+
+ Project     : FIT3077 Assignment
+ Class       : LiveMonitor
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 21 May 2015
+ Description : An abstract class deriving from Monitor superclass, which observes a WeatherLocation in a 'Live' manner
+ Precondition: Monitor superclass and WeatherLocation classes are required
+ 
+
+</member><member name="M:FIT3077_Assignment.WeatherController.#ctor">
+ 
+ Superclass constructor
+ Return      : WeatherController object
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.WeatherController.GetUpdateInterval">
+ 
+ Update interval accessor
+ Return      : The time interval for update in milliseconds as Integer
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.WeatherController.GetAvailableLocations">
+ 
+ Return      : The available locations provided by the Adapter as an array of Strings
+ Param       : None
+
+
+</member><member name="M:FIT3077_Assignment.WeatherController.LocationExists(System.String)">
+ 
+ Description : Check whether a WeatherLocation with the given location name is active, i.e. exists in the selectedLocations list
+ Return      : The index of the location in the list if WeatherLocation with specified location exists. Else, return -1
+ Param       : Name of location as String
+
+
+</member><member name="M:FIT3077_Assignment.WeatherController.GetNumberOfLocations">
+ 
+ Description : Get the number of active WeatherLocations
+ Return      : The number of active WeatherLocations as Integer
+ Param       : None
+
+
+</member><member name="M:FIT3077_Assignment.WeatherController.GetAllSelectedLocations">
+ 
+ Description : Get all location names of currently active WeatherLocations. This function is utilized in removal functionality
+ Return      : The location names of currently active WeatherLocations as array of Strings
+ Param       : None
+
+
+</member><member name="M:FIT3077_Assignment.WeatherController.UpdateLocation(System.Int32)">
+ 
+ Description : Ask a particular WeatherLocation to get an update from the server and asks its monitors to pull data
+ Return      : None
+ Param       : index as Integer, which is the index of the location to be updated in the selectedLocations list
+
+
+</member><member name="M:FIT3077_Assignment.WeatherController.RemoveLocation(System.String)">
+ 
+ Description : Remove a WeatherLocation with the specified location name from the selectedLocations list
+ Return      : None
+ Param       : Name of location as String
+ Post        : WeatherLocation with the specified location together with its associated monitors are removed from the list and the system
+
+
+</member><member name="T:FIT3077_Assignment.WeatherController">
+
+ Project     : FIT3077 Assignment
+ Class       : WeatherController
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 20 May 2015
+ Description : An abstract class which performs the logic of the system and organizes how system requests are handled
+ Precondition: WeatherAdapter and WeatherLocation classes are required
+
+
+</member><member name="M:FIT3077_Assignment.TimeLapseRainfallMonitor.#ctor(FIT3077_Assignment.WeatherLocation)">
+ 
+ Class constructor
+ Return      : TimeLapseRainfallMonitor object
+ Param       : wl As WeatherLocation
+
+
+</member><member name="M:FIT3077_Assignment.TimeLapseRainfallMonitor.FeedData">
+ 
+ Description : Giving data to the requestor
+ Return      : Array of String = (rainfall, date/time)
+ Param       : None
+ 
+
+</member><member name="T:FIT3077_Assignment.TimeLapseRainfallMonitor">
+
+ Project     : FIT3077 Assignment
+ Class       : TimeLapseRainfallMonitor
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 20 May 2015
+ Description : Subclass of TimeLapseMonitor superclass, which feeds only the latest rainfall data and date/time
+ Precondition: WeatherLocation class and Info enumeration are required - Superclass TimeLapseMonitor exists 
+ 
+
+</member><member name="M:FIT3077_Assignment.Monitor.#ctor">
+ 
+ Class constructor
+ Return      : Monitor object
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.Monitor.GetLocation">
+ 
+ Location attribute accessor
+ Return      : Currently observed location as String
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.Monitor.GetMonitorType">
+ 
+ Monitor type attribute accessor
+ Description : The type attribute is utilized for the interface to decide how data is displayed
+ Return      : InfoType enumeration member
+ Param       : None 
+ 
+
+</member><member name="M:FIT3077_Assignment.Monitor.UpdateStatus">
+ 
+ Update status
+ Description : Gets new data from the observed WeatherLocation
+ Return      : None
+ Param       : None 
+
+
+</member><member name="M:FIT3077_Assignment.Monitor.HasNewData">
+ Description : Gets new data from the observed WeatherLocation
+ Return      : True, if Monitor has new data which has not been 'pulled', False otherwise
+ Param       : None 
+
+
+</member><member name="M:FIT3077_Assignment.Monitor.DoneFeedData">
+ Description : Once data has been pulled, set the newData attribute to False
+ Return      : None
+ Param       : None 
+
+
+</member><member name="T:FIT3077_Assignment.Monitor">
+
+ Project     : FIT3077 Assignment
+ Class       : Monitor
+ Author      : Arvin Wiyono (awiy1) and Darren Wong (dwwon6)
+ Modified    : 20 May 2015
+ Description : An abstract class which plays the role of Observer and contains common attributes and methods of subclasses
+ Precondition: WeatherLocation class and InfoType enumeration are required
+ 
+
+</member><member name="M:FIT3077_Assignment.MelbourneWeatherLocation.#ctor(System.String,FIT3077_Assignment.WeatherAdapter)">
+ 
+ Class constructor
+ Return      : MelbourneWeatherLocation object
+ Param       : Location name As String - WeatherAdapter, from which the data will be requested
+ 
+
+</member><member name="M:FIT3077_Assignment.MelbourneWeatherLocation.CheckData">
+ 
+ Description : Check whether old and new data are different. This means that Monitors will be updated as necessary.
+ Return      : This function returns True if there is a difference between the old and the new data. False otherwise.
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.MelbourneWeatherLocation.GetData">
+ 
+ Description : Gets data from the WeatherAdapter
+ Return      : None
+ Param       : None
+ Post        : Attributes contain the latest data taken from the server 
+ Remark      : Latest data does not mean different data
+ 
+
+</member><member name="T:FIT3077_Assignment.MelbourneWeatherLocation">
+
+ Project     : FIT3077 Assignment
+ Class       : MelbourneWeatherLocation
+ Author      : Arvin Wiyono (awiy1) and Darren Wong (dwwon6)
+ Modified    : 19 May 2015
+ Description : Subclass of WeatherLocation
+ Precondition: WeatherAdapter and Monitor classes are required - WeatherLocation superclass exists
+ 
+
+</member><member name="M:FIT3077_Assignment.MainPage.MainPage_Load(System.Object,System.EventArgs)">
+ 
+ Description : Procedure trigerred when MainPage is loaded
+
+
+</member><member name="M:FIT3077_Assignment.MainPage.AddLocationLbl_Click(System.Object,System.EventArgs)">
+ 
+ Description : Procedure executed when AddLocationLbl is clicked
+
+
+</member><member name="M:FIT3077_Assignment.MainPage.PrepareAvailableLocations">
+ 
+ Description : Function which displays the intersection of available locations in both servers
+ Post        : Available locations are displayed in the LocationListBox control 
+
+
+</member><member name="M:FIT3077_Assignment.MainPage.AddLocation(FIT3077_Assignment.WeatherController)">
+ 
+ Description : Procedure which adds a new monitor of selected location to be displayed in the MainPage
+
+
+</member><member name="M:FIT3077_Assignment.MainPage.DrawChart(FIT3077_Assignment.Monitor)">
+ 
+ Description : Procedure which interprets data fed by the Monitor and displays a new chart control in the MainPage
+ Return      : None
+ Param       : Monitor to be displayed
+
+
+</member><member name="M:FIT3077_Assignment.MainPage.DrawLabel(FIT3077_Assignment.Monitor)">
+ 
+ Description : Procedure which interprets data fed by the Monitor and displays a new label control in the MainPage
+ Return      : None
+ Param       : Monitor to be displayed
+
+
+</member><member name="M:FIT3077_Assignment.MainPage.UpdateLocations(FIT3077_Assignment.WeatherController)">
+ 
+ Description : Procedure which sends request to the controller to update active WeatherLocations
+ Return      : None
+ Param       : None
+ Post        : WeatherLocation and associated monitors are updated. Displayed text and graphs are also updated if only Monitor has new data.
+
+
+</member><member name="M:FIT3077_Assignment.MainPage.UpdateControls">
+ 
+ Description : Procedure which updates the controls (label and chart) in the MainPage to displays the current data contained in the associated monitor
+ Return      : None
+ Param       : None
+ Post        : WeatherLocation and associated monitors are updated. Displayed text and graphs are also updated if Monitor has new data.
+
+
+</member><member name="T:FIT3077_Assignment.MainPage">
+
+ Project     : FIT3077 Assignment
+ Class       : MainPage
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 18 May 2015
+ Description : The main page of the weather monitor application
+ Precondition: LiveWeatherController, TimeLapseController and Monitor classes exist - InfoType enumeration is required
+ 
+
+</member><member name="T:FIT3077_Assignment.InfoType">
+
+ Project     : FIT3077 Assignment
+ Class       : Info Enumeration
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 20 May 2015
+ Description : Used to determine what weather info that a Monitor feeds
+               Both = gives both temperature and rainfall; Temperature = gives temperature only; Rainfall = gives rainfall only
+
+
+</member><member name="M:FIT3077_Assignment.LiveTemperatureMonitor.#ctor(FIT3077_Assignment.WeatherLocation)">
+ 
+ Class constructor
+ Return      : LiveTemperatureMonitor object
+ Param       : wl As WeatherLocation
+
+
+</member><member name="M:FIT3077_Assignment.LiveTemperatureMonitor.FeedData">
+ 
+ Description : Giving data to the requestor
+ Return      : Array of String = (temperature, date/time)
+ Param       : None
+ 
+
+</member><member name="T:FIT3077_Assignment.LiveTemperatureMonitor">
+
+ Project     : FIT3077 Assignment
+ Class       : LiveTemperatureMonitor
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 20 May 2015
+ Description : Subclass of LiveMonitor superclass, which feeds only the temperature data and date/time
+ Precondition: WeatherLocation class and Info enumeration are required - Superclass LiveMonitor exists 
+ 
+
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.footer_logo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.icon_white">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.intro_logo2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.Loading_Page_Background">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.logo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.Main_Background">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.monash">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.Refresh">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:FIT3077_Assignment.My.Resources.Resources.weather_icon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:FIT3077_Assignment.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:FIT3077_Assignment.TimeLapseAdapter.#ctor">
+ 
+ Class constructor
+ Return      : TimeLapseAdapter object
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.TimeLapseAdapter.GetLocations">
+ 
+ Description : Transfer the available locations provided by the server - only these locations whose weather info can be requested
+ Return      : Array of available locations as an array of Strings
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.TimeLapseAdapter.GetWeather(System.String)">
+ 
+ Description : Transfer the data provided by the server to the requestor (WeatherLocation)
+ Return      : Array of Strings = (temperature, rainfall, date/time)
+ Param       : Name of location as String
+
+
+</member><member name="T:FIT3077_Assignment.TimeLapseAdapter">
+
+ Project     : FIT3077 Assignment
+ Class       : LiveAdapter
+ Author      : Arvin Wiyono (awiy1) 
+ Modified    : 18 May 2015
+ Description : Subclass of WeatherAdapter superclass
+ Precondition: Required wsdl server is available
+
+
+</member><member name="M:FIT3077_Assignment.TimeLapseWeatherController.#ctor">
+ 
+ Class constructor
+ Return      : TimeLapseWeatherController object
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.TimeLapseWeatherController.CreateMonitor(System.String)">
+ 
+ Description : Creates a monitor which feeds both temperature and rainfall info
+ Return      : Monitor object
+ Param       : Name of location as String
+ Post        : WeatherLocation with the specified location exists with monitor attached
+
+
+</member><member name="M:FIT3077_Assignment.TimeLapseWeatherController.CreateRainfallMonitor(System.String)">
+ 
+ Description : Creates a monitor which feeds only rainfall info
+ Return      : Monitor object
+ Param       : Name of location as String
+ Post        : WeatherLocation with the specified location exists with monitor attached
+
+
+</member><member name="M:FIT3077_Assignment.TimeLapseWeatherController.CreateTemperatureMonitor(System.String)">
+ 
+ Description : Creates a monitor which feeds only temperature info
+ Return      : Monitor object
+ Param       : Name of location as String
+ Post        : WeatherLocation with the specified location exists with monitor attached
+
+
+</member><member name="T:FIT3077_Assignment.TimeLapseWeatherController">
+
+ Project     : FIT3077 Assignment
+ Class       : TimeLapseWeatherController
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 21 May 2015
+ Description : Subclass of WeatherController which handles system requests regarding WeatherLocations which use services provided by the TimeLapseAdapter
+ Required    : TimeLapseAdapter, Monitor, TimeLapseBothMonitor, TimeLapseTemperatureMonitor, TimeLapseRainfallMonitor, WeatherLocation, WeatherController
+
+
+</member><member name="M:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.#ctor">
+	<remarks/>
+</member><member name="E:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.getLocationsCompleted">
+	<remarks/>
+</member><member name="E:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.getWeatherCompleted">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.getLocations">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.getLocationsAsync">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.getLocationsAsync(System.Object)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.getWeather(System.String)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.getWeatherAsync(System.String)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.getWeatherAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashTimeLapse.MelbourneWeatherTimeLapse">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashTimeLapse.getLocationsCompletedEventHandler">
+	<remarks/>
+</member><member name="P:FIT3077_Assignment.MonashTimeLapse.getLocationsCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashTimeLapse.getLocationsCompletedEventArgs">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashTimeLapse.getWeatherCompletedEventHandler">
+	<remarks/>
+</member><member name="P:FIT3077_Assignment.MonashTimeLapse.getWeatherCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:FIT3077_Assignment.MonashTimeLapse.getWeatherCompletedEventArgs">
+	<remarks/>
+</member><member name="M:FIT3077_Assignment.LiveAdapter.#ctor">
+ 
+ Class constructor
+ Return      : LiveAdapter object
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.LiveAdapter.GetLocations">
+ 
+ Description : Transfer the available locations provided by the server - only these locations whose weather info can be requested
+ Return      : Array of available locations as an array of Strings
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.LiveAdapter.GetWeather(System.String)">
+ 
+ Description : Transfer the data provided by the server to the requestor (WeatherLocation)
+ Return      : Array of Strings = (temperature, rainfall, date/time)
+ Param       : Name of location as String
+
+
+</member><member name="T:FIT3077_Assignment.LiveAdapter">
+
+ Project     : FIT3077 Assignment
+ Class       : LiveAdapter
+ Author      : Arvin Wiyono (awiy1) 
+ Modified    : 18 May 2015
+ Description : Subclass of WeatherAdapter superclass
+ Precondition: Required wsdl server is available
+
+
+</member><member name="M:FIT3077_Assignment.WeatherLocation.#ctor(System.String,FIT3077_Assignment.WeatherAdapter)">
+ 
+ Class constructor
+ Return      : MelbourneWeatherLocation object
+ Param       : Location name As String - WeatherAdapter, from which the data will be requested
+ 
+
+</member><member name="M:FIT3077_Assignment.WeatherLocation.AttachMonitor(FIT3077_Assignment.Monitor)">
+ 
+ Description : Add a monitor to the list of monitors
+ Return      : None
+ Param       : Monitor, the Monitor object to be attached
+
+
+</member><member name="M:FIT3077_Assignment.WeatherLocation.DetachMonitor(FIT3077_Assignment.Monitor)">
+ 
+ Description : Remove a monitor from the list of monitors
+ Return      : None
+ Param       : Monitor, the Monitor object to be detached
+
+
+</member><member name="M:FIT3077_Assignment.WeatherLocation.UpdateDataAndMonitor">
+ 
+ Description : This function will update each monitor as necessary - CheckData() is used to compare the old and the new data
+ Return      : None
+ Param       : None
+ Post        : Observing monitors are updated 
+
+</member><member name="T:FIT3077_Assignment.WeatherLocation">
+
+ Project     : FIT3077 Assignment
+ Class       : WeatherLocation
+ Author      : Arvin Wiyono (awiy1) and Darren Wong (dwwon6)
+ Modified    : 19 May 2015
+ Description : An abstract class which plays the role of Subject and contains common attributes and methods of subclasses
+ Precondition: WeatherAdapter and Monitor classes are required
+ 
+
+</member><member name="M:FIT3077_Assignment.WeatherAdapter.#ctor(System.Int32)">
+ 
+ Superclass constructor
+ Return      : WeatherAdapter object
+ Param       : The update interval time as Integer specified in millisecond unit
+ 
+
+</member><member name="M:FIT3077_Assignment.WeatherAdapter.GetUpdateInterval">
+ 
+ Description : Getting the value of updateInterval attribute
+ Return      : The update interval time as Integer
+ Param       : None
+
+
+</member><member name="T:FIT3077_Assignment.WeatherAdapter">
+
+ Project     : FIT3077 Assignment
+ Class       : WeatherAdapter
+ Author      : Arvin Wiyono (awiy1) and Darren Wong (dwwon6)
+ Modified    : 18 May 2015
+ Description : An abstract class which encapsulates and bridges the transfer of data between the real server and the WeatherLocation
+ Precondition: None
+
+
+</member><member name="M:FIT3077_Assignment.LiveBothMonitor.#ctor(FIT3077_Assignment.WeatherLocation)">
+ 
+ Class constructor
+ Return      : LiveBothMonitor object
+ Param       : wl As WeatherLocation
+
+
+</member><member name="M:FIT3077_Assignment.LiveBothMonitor.FeedData">
+ 
+ Description : Giving data to the client
+ Return      : Array of String = (temperature, rainfall, date/time)
+ Param       : None
+ 
+
+</member><member name="T:FIT3077_Assignment.LiveBothMonitor">
+
+ Project     : FIT3077 Assignment
+ Class       : LiveBothMonitor
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 21 May 2015
+ Description : Subclass of LiveMonitor superclass, which feeds both the temperature and rainfall data, and date/time
+ Precondition: WeatherLocation class and Info enumeration are required - Superclass LiveMonitor exists 
+ 
+
+</member><member name="M:FIT3077_Assignment.LiveWeatherController.#ctor">
+ 
+ Class constructor
+ Return      : LiveWeatherController object
+ Param       : None
+ 
+
+</member><member name="M:FIT3077_Assignment.LiveWeatherController.CreateTemperatureMonitor(System.String)">
+ 
+ Description : Creates a monitor which feeds only temperature info
+ Return      : Monitor object
+ Param       : Name of location as String
+ Post        : WeatherLocation with the specified location exists with monitor attached
+
+
+</member><member name="M:FIT3077_Assignment.LiveWeatherController.CreateRainfallMonitor(System.String)">
+ 
+ Description : Creates a monitor which feeds only rainfall info
+ Return      : Monitor object
+ Param       : Name of location as String
+ Post        : WeatherLocation with the specified location exists with monitor attached
+
+
+</member><member name="M:FIT3077_Assignment.LiveWeatherController.CreateMonitor(System.String)">
+ 
+ Description : Creates a monitor which feeds both temperature and rainfall info
+ Return      : Monitor object
+ Param       : Name of location as String
+ Post        : WeatherLocation with the specified location exists with monitor attached
+
+
+</member><member name="T:FIT3077_Assignment.LiveWeatherController">
+
+ Project     : FIT3077 Assignment
+ Class       : LiveWeatherController
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 21 May 2015
+ Description : Subclass of WeatherController which handles system requests regarding WeatherLocations which use services provided by the LiveAdapter
+ Required    : LiveAdapter, Monitor, LiveBothMonitor, LiveTemperatureMonitor, LiveRainfallMonitor, WeatherLocation, WeatherController
+
+
+</member><member name="M:FIT3077_Assignment.LiveRainfallMonitor.#ctor(FIT3077_Assignment.WeatherLocation)">
+ 
+ Class constructor
+ Return      : LiveRainfallMonitor object
+ Param       : wl As WeatherLocation
+
+
+</member><member name="M:FIT3077_Assignment.LiveRainfallMonitor.FeedData">
+ 
+ Description : Giving data to the requestor
+ Return      : Array of String = (rainfall, date/time)
+ Param       : None
+ 
+
+</member><member name="T:FIT3077_Assignment.LiveRainfallMonitor">
+
+ Project     : FIT3077 Assignment
+ Class       : LiveRainfallMonitor
+ Author      : Arvin Wiyono (awiy1)
+ Modified    : 20 May 2015
+ Description : Subclass of LiveMonitor superclass, which feeds only the rainfall data and date/time
+ Precondition: WeatherLocation class and Info enumeration are required - Superclass LiveMonitor exists 
+ 
+
+</member>
+</members>
+</doc>
